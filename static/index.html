@@ -13,9 +13,9 @@
     <main>
         <nav>CHALLENGES / APPARMOR</nav>
         <section class="hero">
-            <div><small>CHALLENGE AKTIF</small>
+            <div>
                 <h1>Secure File Manager</h1>
-                <p>AppArmor / Access Control <span>Medium</span></p>
+                <p>AppArmor / Access Control</p>
             </div>
         </section>
         <div class="grid">
@@ -38,11 +38,14 @@
                         <li>Aplikasi tidak diperbolehkan melakukan operasi penulisan (<em>write</em>) terhadap file apa
                             pun yang berada di direktori <code>/var/log/</code>.</li>
                     </ol>
-                    <p>Administrator meminta kamu membuat profil AppArmor yang menerapkan seluruh kebijakan tersebut.
+                    <p>
+                        Administrator meminta kamu membuat profil AppArmor yang menerapkan seluruh kebijakan tersebut.
                     </p>
-                    <p>Berdasarkan skenario di atas, buatlah sebuah profil AppArmor untuk aplikasi
+                    <p>
+                        Berdasarkan skenario di atas, buatlah sebuah profil AppArmor untuk aplikasi
                         <code>/usr/local/bin/file-manager</code> dengan memenuhi seluruh ketentuan akses yang telah
-                        ditetapkan administrator.</p>
+                        ditetapkan administrator.
+                    </p>
                     <h3>Ketentuan pengerjaan</h3>
                     <ol>
                         <li>Gunakan struktur profil AppArmor yang benar.</li>
@@ -58,11 +61,15 @@
                     <h2>Profil AppArmor <small>MAKS. 20 KB</small></h2>
                     <p>Tulis atau tempel seluruh profil. Pemeriksaan sintaks tidak memuat profil ke kernel.</p>
                     <div class="editor">
-                        <div>● ● ● <span>profile.apparmor</span></div><textarea id="profile" maxlength="20480"
+                        <div>● ● ● <span>profile.apparmor</span></div>
+                        <textarea id="profile" maxlength="20480"
                             spellcheck="false"
-                            placeholder="#include &lt;tunables/global&gt;&#10;&#10;# Tulis profil AppArmor di sini"></textarea>
-                    </div><button id="copy">Salin Konfigurasi</button><button id="reset">Reset Editor</button><button
-                        class="submit" id="validate">Validasi Konfigurasi</button>
+                            placeholder="#include &lt;tunables/global&gt;&#10;&#10;# Tulis profil AppArmor di sini">
+                        </textarea>
+                    </div>
+                    <button id="copy">Salin Konfigurasi</button>
+                    <button id="reset">Reset Editor</button>
+                    <button class="submit" id="validate">Validasi Konfigurasi</button>
                     <p id="msg" role="status"></p>
                 </article>
                 <section id="results" class="card" hidden>
@@ -77,9 +84,7 @@
                 <p><code>/tmp/file-manager/</code><br>Baca dan tulis file sementara</p>
                 <p><code>/home/</code><br>Baca dokumen pengguna</p>
                 <p><code>/var/log/</code><br>Penulisan harus ditolak</p>
-                <hr>SKOR MAKSIMAL <b>100 poin</b>
-                <div class="info"><b>Validasi aman</b><br>Parser memeriksa sintaks tanpa memuat profil ke kernel. Hasil
-                    ini tidak menguji enforcement akses secara langsung.</div>
+                <hr>
             </aside>
         </div>
         <footer>UAP Access Control CTF <span>Modul 6 · Access Control</span></footer>

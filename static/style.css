@@ -54,10 +54,6 @@ nav,
     margin: 14px 0 20px
 }
 
-.hero small {
-    color: #2868d7
-}
-
 .hero h1 {
     font-size: 32px;
     margin: 5px 0;
@@ -67,15 +63,6 @@ nav,
 .hero p {
     margin: 0;
     color: #718197
-}
-
-.hero p span {
-    background: #fff2dd;
-    color: #996818;
-    border-radius: 20px;
-    padding: 4px 10px;
-    margin-left: 10px;
-    font-size: 11px
 }
 
 .grid {
@@ -172,7 +159,8 @@ button {
     color: white;
     border-radius: 7px;
     padding: 10px 14px;
-    float: right
+    float: right;
+    margin-top: 10px
 }
 
 #msg {
@@ -196,16 +184,6 @@ aside p code {
 
 aside p br+* {
     color: #8291a1
-}
-
-.info {
-    background: #eef6ff;
-    border: 1px solid #dce9f6;
-    border-radius: 8px;
-    padding: 11px;
-    margin-top: 16px;
-    font-size: 11px;
-    color: #496988
 }
 
 #checks {
